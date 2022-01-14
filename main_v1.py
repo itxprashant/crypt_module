@@ -1,5 +1,5 @@
 alphabets = "ABCDEFGHIJKLMNOPQRSTUVWXYZab1cd3e2f4ghi5jkl6mn7opq8rs9 t0uvwxyz"
-fu = open("key","r")
+fu = open("key_example","r")
 mykey = fu.read()
 
 
@@ -30,5 +30,4 @@ def decrypt(text, key):
  
 
     return dec_text
-print(encrypt("Hello There", mykey))
 fu.close()
