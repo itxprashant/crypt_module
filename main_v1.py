@@ -1,11 +1,21 @@
+import random
 alphabets = "ABCDEFGHIJKLMNOPQRSTUVWXYZab1cd3e2f4ghi5jkl6mn7opq8rs9 t0uvwxyz"
-fu = open("key_example","r")
-mykey = fu.read()
 
 
-def create_key(key_text):
+
+def read_key():
+    fu = open("key","r")
+    mykey = fu.read()
+    fu.close()
+    return mykey
     pass
-    
+
+
+def create_key():
+    fu = open("key", "w")
+    fu.write(''.join(random.sample(alphabets,len(alphabets))))
+    fu.close()
+
 def encrypt(text, key):
 
     xkey = key
@@ -30,4 +40,3 @@ def decrypt(text, key):
  
 
     return dec_text
-fu.close()
