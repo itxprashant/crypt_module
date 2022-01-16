@@ -1,5 +1,5 @@
 import random
-alphabets = "ABCDEFGHIJKLMNOPQRSTUVWXYZab1cd3e2f4ghi5jkl6mn7opq8rs9 t0uvwxyz"
+alphabets = "ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()-_=+[{]};:\'\"\\,./<>?"
 
 
 
