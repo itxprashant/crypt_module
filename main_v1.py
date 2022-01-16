@@ -33,10 +33,10 @@ def encrypt(text, key):
 def decrypt(text, key):
 
     xkey = key
-    pairs_dec = {alphabets[i]: xkey[i] for i in range(len(alphabets))}
+    pairs_dec = {xkey[i]: alphabets[i] for i in range(len(alphabets))}
     dec_text = str()
     for i in range(len(text)):        
-        dec_text += pairs_enc[text[i]]
+        dec_text += pairs_dec[text[i]]
  
 
     return dec_text
