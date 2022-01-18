@@ -1,4 +1,4 @@
-import main_v1 as mod
+import main_v2 as mod
 print("""List of command:
 g - Generate new key
 i - insert new key
@@ -7,8 +7,8 @@ d - decrypt a text.\n""")
 while True:
     x = input("Enter a command:").lower()
     if x == 'g':
-        mod.create_key()
-        print("Generated key: ",mod.read_key()) 
+        mod.Cryptography.create_key()
+        print("Generated key: ",mod.Cryptography.read_key())
     elif x == 'i':
         f = open("key","w")
         y = input("Enter a key(must be a generated one): ")
@@ -17,7 +17,7 @@ while True:
         print("Key added successfully!")
     elif x == 'e':
         z = input("Enter a text to encrypt: ")
-        print("Encrypted text: ", mod.encrypt(z, mod.read_key()))
+        print("Encrypted text: ", mod.Cryptography.encrypt(z, mod.Cryptography.read_key()))
     elif x == 'd':
         zz = input("Enter a text to decrypt: ")
-        print("Decrypted text: ", mod.decrypt(zz, mod.read_key()))
+        print("Decrypted text: ", mod.Cryptography.decrypt(zz, mod.Cryptography.read_key()))
