@@ -1,4 +1,4 @@
-import main_v2 as mod
+import main_v1 as mod
 print("""List of command:
 g - Generate new key
 i - insert new key
